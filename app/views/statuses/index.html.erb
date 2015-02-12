@@ -1,2 +1,11 @@
-<h1>Statuses#index</h1>
+<h1>Statuses Index</h1>
 <p>Find me in app/views/statuses/index.html.erb</p>
+
+<% @statuses.each do |status| %>
+	<%= div_for status do %>
+		<p>
+			<%= status.body %>
+		</p>	
+	<% end %>
+<% end %>
+

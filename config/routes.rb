@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+
+  root 'statuses#index'
   get 'statuses/index'
 
   get 'statuses/show'
