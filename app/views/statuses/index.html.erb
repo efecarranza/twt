@@ -1,8 +1,9 @@
 <h1>Statuses Index</h1>
 <p>Find me in app/views/statuses/index.html.erb</p>
 
-
-<%= link_to "previous page", page: @page - 1 %>
+<% if @page > 1 %>
+	<%= link_to "previous page", page: @page - 1 %>
+<% end %>
 <%= link_to "next page", page: @page + 1 %>
 
 <% @statuses.each do |status| %>
